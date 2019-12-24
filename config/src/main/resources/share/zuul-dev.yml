@@ -1,0 +1,10 @@
+server:
+  port: 9300
+zuul:
+  routes:
+    core-base:
+      path: /core-base/**
+      serviceId: core-base
+    core-base-api:
+      path: /core-base-api/**
+      serviceId: core-base-api

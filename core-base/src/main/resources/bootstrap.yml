@@ -1,0 +1,29 @@
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:9000/eureka/
+spring:
+  application:
+    name: core-base
+  cloud:
+    config:
+      uri: http://localhost:9001/
+      ## 数据库相关
+      refresh:
+        refreshable: none
+  profiles:
+    active: dev
+  ## 数据库相关
+  datasource:
+    url: jdbc:mysql://127.0.0.1:3306/seaweed?serverTimezone=GMT%2B8&characterEncoding=utf-8&autoReconnect=true&allowMultiQueries=true
+    username: root
+    password: 123456
+    driver-class-name: com.mysql.cj.jdbc.Driver
+#Mybatis配置
+mybatis:
+  mapper-locations: classpath:mapper/*.xml
+
+logging:
+  level:
+    com.knowledge: DEBUG
+    jdbc.sqltiming: DEBUG
