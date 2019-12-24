@@ -8,12 +8,6 @@ spring:
   cloud:
     config:
       uri: http://localhost:9001/
-      ## 数据库相关
-      refresh:
-        refreshable: none
   profiles:
     active: dev
-feign:
-  httpclient:
-    enabled: true
 
