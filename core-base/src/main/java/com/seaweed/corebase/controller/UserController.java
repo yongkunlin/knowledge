@@ -14,7 +14,10 @@ import org.springframework.web.bind.annotation.RestController;
 
 import java.util.List;
 
-// Controller + ResponseBody
+/**
+ * @author lyk
+ * 用户管理
+ */
 @RestController
 @RequestMapping("user")
 @Api(value = "用户", tags = "用户接口")
@@ -30,7 +33,7 @@ public class UserController {
 
     @PostMapping(value = "list")
     @ApiOperation(value = "列表", notes = "使用mybatisplus自带的list方法")
-    public Result list(User user) {
+    public Result<List<User>> list(User user) {
         QueryWrapper<User> queryWrapper = new QueryWrapper<>();
         List<User> list = userService.list(queryWrapper);
         return Result.data(list);

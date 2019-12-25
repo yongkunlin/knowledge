@@ -1,7 +1,14 @@
 package com.seaweed.common.mybatis.tool.result;
 
+/**
+ * 返回结果封装枚举
+ *
+ * @author lyk
+ */
 public enum ResultCode implements IResultCode {
+    // 操作成功
     SUCCESS(200, "操作成功"),
+    // 异常情况
     FAILURE(400, "业务异常"),
     UN_AUTHORIZED(401, "请求未授权"),
     NOT_FOUND(404, "404 没找到请求"),
@@ -24,10 +31,12 @@ public enum ResultCode implements IResultCode {
         this.message = message;
     }
 
+    @Override
     public int getCode() {
         return this.code;
     }
 
+    @Override
     public String getMessage() {
         return this.message;
     }

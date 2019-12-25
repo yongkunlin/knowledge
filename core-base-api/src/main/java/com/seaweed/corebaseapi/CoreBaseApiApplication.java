@@ -7,6 +7,11 @@ import org.springframework.cloud.netflix.hystrix.EnableHystrix;
 import org.springframework.cloud.netflix.hystrix.dashboard.EnableHystrixDashboard;
 import org.springframework.cloud.openfeign.EnableFeignClients;
 
+/**
+ * 系统核心api启动类
+ *
+ * @author lyk
+ */
 @EnableHystrix
 @EnableFeignClients
 @EnableDiscoveryClient

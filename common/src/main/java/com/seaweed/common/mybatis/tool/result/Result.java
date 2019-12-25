@@ -7,6 +7,12 @@ import lombok.ToString;
 import java.io.Serializable;
 import java.util.Optional;
 
+/**
+ * 结果entity类
+ *
+ * @param <T>
+ * @author lyk
+ */
 @Data
 @NoArgsConstructor
 @ToString

@@ -10,6 +10,10 @@ import lombok.NoArgsConstructor;
 import java.io.Serializable;
 import java.util.Date;
 
+/**
+ * @author lyk
+ * entity基础类
+ */
 @Data
 @NoArgsConstructor
 @AllArgsConstructor
