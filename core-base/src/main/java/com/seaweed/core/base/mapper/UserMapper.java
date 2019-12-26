@@ -1,7 +1,7 @@
-package com.seaweed.corebase.mapper;
+package com.seaweed.core.base.mapper;
 
 import com.baomidou.mybatisplus.core.mapper.BaseMapper;
-import com.seaweed.corebaseapi.entity.User;
+import com.seaweed.core.base.api.entity.User;
 import org.apache.ibatis.annotations.Mapper;
 
 /**

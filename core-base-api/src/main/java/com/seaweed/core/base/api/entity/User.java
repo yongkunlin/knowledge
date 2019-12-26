@@ -1,4 +1,4 @@
-package com.seaweed.corebaseapi.entity;
+package com.seaweed.core.base.api.entity;
 
 import com.baomidou.mybatisplus.annotation.TableName;
 import com.seaweed.common.mybatis.base.BaseEntity;

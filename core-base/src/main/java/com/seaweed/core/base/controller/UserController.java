@@ -1,9 +1,9 @@
-package com.seaweed.corebase.controller;
+package com.seaweed.core.base.controller;
 
 import com.baomidou.mybatisplus.core.conditions.query.QueryWrapper;
 import com.seaweed.common.mybatis.tool.result.Result;
-import com.seaweed.corebase.service.UserService;
-import com.seaweed.corebaseapi.entity.User;
+import com.seaweed.core.base.service.UserService;
+import com.seaweed.core.base.api.entity.User;
 import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiOperation;
 import org.springframework.beans.factory.annotation.Autowired;

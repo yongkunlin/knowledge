@@ -1,7 +1,7 @@
-package com.seaweed.businessnote.controller;
+package com.seaweed.business.note.controller;
 
 import com.seaweed.common.mybatis.tool.result.Result;
-import com.seaweed.corebaseapi.rpc.UserApi;
+import com.seaweed.core.base.api.rpc.UserApi;
 import io.swagger.annotations.Api;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;

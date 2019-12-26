@@ -1,4 +1,4 @@
-package com.seaweed.businessnote;
+package com.seaweed.business.note;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

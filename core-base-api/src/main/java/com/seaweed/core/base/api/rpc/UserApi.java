@@ -1,4 +1,4 @@
-package com.seaweed.corebaseapi.rpc;
+package com.seaweed.core.base.api.rpc;
 
 import com.seaweed.common.mybatis.constant.AppConstant;
 import com.seaweed.common.mybatis.tool.result.Result;

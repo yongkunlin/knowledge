@@ -1,4 +1,4 @@
-package com.seaweed.corebase;
+package com.seaweed.core.base;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
