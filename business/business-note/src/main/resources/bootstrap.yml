@@ -4,10 +4,9 @@ eureka:
       defaultZone: http://localhost:9000/eureka/
 spring:
   application:
-    name: core-base-api
+    name: business-note
   cloud:
     config:
       uri: http://localhost:9001/
   profiles:
     active: dev
-

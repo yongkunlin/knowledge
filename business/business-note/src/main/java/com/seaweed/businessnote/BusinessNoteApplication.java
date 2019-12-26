@@ -1,23 +1,23 @@
-package com.seaweed.corebase;
+package com.seaweed.businessnote;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
-import org.springframework.cloud.client.discovery.EnableDiscoveryClient;
 import org.springframework.cloud.netflix.eureka.EnableEurekaClient;
+import org.springframework.cloud.openfeign.EnableFeignClients;
 
 /**
- * 系统核心启动类
- * EnableDiscoveryClient 声明自己为提供方
- *
  * @author lyk
+ * 业务模块启动类
  */
 @EnableEurekaClient
-@EnableDiscoveryClient
+@EnableFeignClients("com.seaweed")
 @SpringBootApplication
-public class CoreBaseApplication {
+public class BusinessNoteApplication {
 
     public static void main(String[] args) {
-        SpringApplication.run(CoreBaseApplication.class, args);
+        SpringApplication.run(BusinessNoteApplication.class, args);
     }
 
 }
+
+

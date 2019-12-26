@@ -11,7 +11,7 @@ import org.springframework.web.bind.annotation.GetMapping;
  * @author lyk
  */
 
-@FeignClient(value = AppConstant.APPLICATION_BASE_API)
+@FeignClient(value = AppConstant.APPLICATION_BASE)
 public interface UserApi {
 
     /**
@@ -19,6 +19,6 @@ public interface UserApi {
      *
      * @return 测试结果
      */
-    @GetMapping("name")
+    @GetMapping("/user/name")
     Result<String> getName();
 }

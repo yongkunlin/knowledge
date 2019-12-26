@@ -5,6 +5,6 @@ zuul:
     core-base:
       path: /core-base/**
       serviceId: core-base
-    core-base-api:
-      path: /core-base-api/**
-      serviceId: core-base-api
+    business-note:
+      path: /business-note/**
+      serviceId: business-note
