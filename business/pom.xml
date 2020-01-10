@@ -12,6 +12,7 @@
     <artifactId>business</artifactId>
     <packaging>pom</packaging>
     <modules>
+        <module>business-note</module>
         <module>business-note-api</module>
     </modules>
 
