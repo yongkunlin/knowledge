@@ -1,4 +1,4 @@
-package com.seaweed.common.mybatis.tool.result;
+package com.seaweed.common.tool.result;
 
 /**
  * 返回结果封装枚举
@@ -21,7 +21,9 @@ public enum ResultCode implements IResultCode {
     PARAM_TYPE_ERROR(400, "请求参数类型错误"),
     PARAM_BIND_ERROR(400, "请求参数绑定错误"),
     PARAM_VALID_ERROR(400, "参数校验失败"),
-    NOT_REPEATED_SUBMISSION(400, "请勿重复提交");
+    NOT_REPEATED_SUBMISSION(400, "请勿重复提交"),
+    DUPLICATE_KEY_EXCEPTION(500, "数据库中已存在该记录"),
+    UNKNOWN_EXCEPTION(500, "未知异常，请联系管理员");
 
     final int code;
     final String message;

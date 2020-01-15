@@ -1,4 +1,4 @@
-package com.seaweed.common.mybatis.tool.result;
+package com.seaweed.common.tool.result;
 
 import java.io.Serializable;
 

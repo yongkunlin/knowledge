@@ -1,8 +1,10 @@
-package com.seaweed.common.mybatis.tool.result;
+package com.seaweed.common.tool.result;
 
+import com.seaweed.common.exception.base.BusinessException;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 import lombok.ToString;
+import org.springframework.dao.DuplicateKeyException;
 
 import java.io.Serializable;
 import java.util.Optional;
@@ -100,35 +102,15 @@ public class Result<T> implements Serializable {
         return flag ? success("操作成功") : fail("操作失败");
     }
 
-    public int getCode() {
-        return this.code;
+    public static <T> Result<T> businessException(BusinessException e) {
+        return new Result(e.getCode(), null, e.getMessage());
     }
 
-    public void setCode(int code) {
-        this.code = code;
+    public static <T> Result<T> duplicateKeyException() {
+        return new Result(ResultCode.DUPLICATE_KEY_EXCEPTION);
     }
 
-    public boolean isSuccess() {
-        return this.success;
-    }
-
-    public void setSuccess(boolean success) {
-        this.success = success;
-    }
-
-    public T getData() {
-        return this.data;
-    }
-
-    public void setData(T data) {
-        this.data = data;
-    }
-
-    public String getMsg() {
-        return this.msg;
-    }
-
-    public void setMsg(String msg) {
-        this.msg = msg;
+    public static <T> Result<T> exception() {
+        return new Result(ResultCode.DUPLICATE_KEY_EXCEPTION);
     }
 }
