@@ -1,6 +1,6 @@
 //package com.seaweed.core.base.api.rpc.hystric;
 //
-//import com.seaweed.common.mybatis.tool.result.Result;
+//import com.seaweed.common.tool.result.Result;
 //import com.seaweed.core.base.api.rpc.UserApi;
 //import org.springframework.stereotype.Component;
 //

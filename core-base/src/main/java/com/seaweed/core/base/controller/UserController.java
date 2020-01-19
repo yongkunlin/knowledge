@@ -1,16 +1,14 @@
 package com.seaweed.core.base.controller;
 
 import com.baomidou.mybatisplus.core.conditions.query.QueryWrapper;
-import com.seaweed.common.mybatis.tool.result.Result;
-import com.seaweed.core.base.service.UserService;
+import com.seaweed.common.exception.base.BusinessException;
+import com.seaweed.common.tool.result.Result;
 import com.seaweed.core.base.api.entity.User;
+import com.seaweed.core.base.service.UserService;
 import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiOperation;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
 
@@ -33,9 +31,10 @@ public class UserController {
 
     @PostMapping(value = "list")
     @ApiOperation(value = "列表", notes = "使用mybatisplus自带的list方法")
-    public Result<List<User>> list(User user) {
-        QueryWrapper<User> queryWrapper = new QueryWrapper<>();
-        List<User> list = userService.list(queryWrapper);
-        return Result.data(list);
+    public Result<List<User>> list(@RequestBody User user) {
+        throw new BusinessException("测试异常");
+//        QueryWrapper<User> queryWrapper = new QueryWrapper<>();
+//        List<User> list = userService.list(queryWrapper);
+//        return Result.data(list);
     }
 }

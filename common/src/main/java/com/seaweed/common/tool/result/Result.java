@@ -4,7 +4,6 @@ import com.seaweed.common.exception.base.BusinessException;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 import lombok.ToString;
-import org.springframework.dao.DuplicateKeyException;
 
 import java.io.Serializable;
 import java.util.Optional;
