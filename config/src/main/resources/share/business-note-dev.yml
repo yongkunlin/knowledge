@@ -15,7 +15,3 @@ logging:
   level:
     com.knowledge: DEBUG
     jdbc.sqltiming: DEBUG
-# 断路器默认关闭 设置开启
-#feign:
-#  httpclient:
-#    enabled: true

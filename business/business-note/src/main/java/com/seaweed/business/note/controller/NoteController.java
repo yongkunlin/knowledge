@@ -1,8 +1,8 @@
 package com.seaweed.business.note.controller;
 
+import com.seaweed.business.note.service.NoteService;
 import com.seaweed.common.tool.result.Result;
 import com.seaweed.core.base.api.entity.User;
-import com.seaweed.core.base.api.rpc.UserApi;
 import io.swagger.annotations.Api;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -22,15 +22,15 @@ import java.util.List;
 public class NoteController {
 
     @Autowired
-    private UserApi userApi;
+    private NoteService noteService;
 
     @GetMapping("name")
     public Result<String> getName() {
-        return userApi.getName();
+        return noteService.getName();
     }
 
-    @GetMapping("list")
-    public Result<List<User>> list() {
-        return userApi.list(new User());
+    @GetMapping("listUser")
+    public Result<List<User>> listUser() {
+        return noteService.listUser();
     }
 }

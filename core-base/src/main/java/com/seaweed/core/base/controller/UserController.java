@@ -1,6 +1,5 @@
 package com.seaweed.core.base.controller;
 
-import com.baomidou.mybatisplus.core.conditions.query.QueryWrapper;
 import com.seaweed.common.exception.base.BusinessException;
 import com.seaweed.common.tool.result.Result;
 import com.seaweed.core.base.api.entity.User;
